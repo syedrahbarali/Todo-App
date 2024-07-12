@@ -1,0 +1,35 @@
+.task-item {
+  width: 320px;
+  height: auto;
+  border-radius: 0.25em;
+  padding: 0.75em;
+  background-color: #393939;
+}
+
+.task-item__name {
+  font-weight: bold;
+}
+
+.task-item__buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.task-item__button {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.delete:hover > * {
+  color: #f02b2b;
+}
+
+.edit:hover > * {
+  color: green;
+}

@@ -1,0 +1,19 @@
+.create-task {
+  width: 100%;
+  /* height: 75%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-task__form {
+  min-width: 324px;
+  width: 50%;
+}
+
+.create-task__form-input {
+  padding: 1em;
+  border-radius: 0.325em;
+  background-color: #393939;
+}

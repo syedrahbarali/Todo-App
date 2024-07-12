@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+html {
+  background-color: #191919;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  min-height: calc(100vh - 70px);
+  height: calc(100vh - 70px);
+  margin-inline: auto;
+  margin-top: 70px;
+  /* margin-bottom: 70px; */
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.button--primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25em;
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  padding: 0.75em 1.25em;
+  border-radius: 0.25em;
+  transition: background-color 250ms;
+  cursor: pointer;
+}
+
+.button--primary:hover {
+  background-color: #0069d9;
+}
+
+.margin-y-children > * {
+  margin-block: 1em;
+}
+
+.label-input--block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+
+a,
+button,
+input,
+textarea {
+  border: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  /* outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .container {
+    width: 90%;
+  }
+}
